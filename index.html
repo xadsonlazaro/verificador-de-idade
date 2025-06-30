@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>verificador de Idade!</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header> 
+        <h1> verificador de Idade!</h1> 
+    </header> 
+    <section> 
+        <div> 
+        <p> 
+            Ano de Nascimento: 
+            <input class="input" type="number" name="idade" id="txtano" placeholder="Coloque aqui!"> 
+        </p>    
+        <p> 
+            Sexo: <input type="radio" class="input-date" name="radsex" id="Sex1" checked> 
+
+            <label for="Sex1"> Masculino 👨‍🦰  </label> 
+            
+            <input type="radio" name="radsex" id="Sex2" class="input-number" >
+
+            <label for="Sex2"> Femenino 👩‍🦰</label>
+        </p>
+        </div>
+
+        <div id="res" class="mensagem">  
+            Preeche os Dados Para Obeter Resultado
+        </div>
+
+        <p> 
+           <input class="button" type="button"   value="Verificar" onclick="verificar()">
+        </p>
+    </section>
+
+    <footer> 
+        &copy; Xadson Lázaro 
+    </footer>
+    
+    <script src="sever.js"></script>
+</body>
+</html>

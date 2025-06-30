@@ -1,0 +1,119 @@
+
+img { 
+    margin-top: 2px; 
+    max-width: 100px;
+    padding-left: 20px; 
+    border-radius: 20px;
+    color: rgb(0, 68, 255); 
+    box-shadow: 5px 6px 3px;  
+    white-space: 100vh;
+ }  
+    
+ * { 
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    color: aliceblue;
+    background-color: #000;
+ }
+
+ .input { 
+    width: 250px; 
+    padding: 12px 16px; 
+    font-size: 18px; 
+    border-radius: 150px; 
+    background: rgba(255, 255, 255, 0.788);  
+    text-align: center;
+    color: black;
+    outline: none; 
+    transition: all 0.3s ease; 
+    box-shadow: 0 0 10px #00f2fe50; 
+    animation: neon-pulse 2s infinite; 
+ }
+ 
+ .input-neon:focus { 
+    background: linear-gradient(120deg,  
+    #00f2fe, #4facfe); 
+    color: black; 
+    box-shadow: 0 0 20px #00f2fe, 0 0 40px #4facfe;
+    transform: scale(1.05);
+ } 
+
+ .input {  
+
+ } 
+ 
+ @keyframes neon-pulse { 
+    0% {  
+        box-shadow: 0 0 10px #00f2fe, 0 0 40px #4facfe; 
+    }
+    50% { 
+        box-shadow: 0 0 20px #00f2fe;
+    } 
+    100% { 
+        box-shadow: 0 0 10px #00d8fe50;
+    }
+ }
+
+ h1 { 
+    margin-bottom: 25px; 
+    color: #00cbfe;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+ }
+
+
+.input-number { 
+    animation: pulseInput 2s infinite; 
+ }
+.mensagem { 
+    margin-top: 15px;
+    font-size: 18px;
+    color: #fff;
+} 
+
+.button {  
+    position: relative; 
+    padding: 14px 30px; 
+    font-size: 16px;
+    text-transform: uppercase; 
+    border: none;  
+    background: #111; 
+    color: #00f2fe; 
+    cursor: pointer; 
+    overflow: hidden; 
+    border-radius: 20px; 
+    z-index: 1; 
+    transition: transform 0.2s ease; 
+    letter-spacing: 1px; 
+    box-shadow: 0 0 10px #00f2fe, 0 0 20px #00f2fe inset; 
+}
+
+
+.button::before { 
+    content: "";
+    position: absolute; 
+    top: 50%; 
+    left: 50%; 
+    width: 0; 
+    height: 0; 
+    background: radial-gradient(circle, #00f2fe88, transparent 70%);
+    transform: translate(-50% -50%); 
+    border-radius: 50%; 
+    z-index: 0; 
+    transition: width 0.6s ease, height 
+    0.6s ease, opacity 0.6s ease;
+    opacity: 0; 
+} 
+
+.button:hover::before { 
+    width: 300%; 
+    height: 300%; 
+    opacity: 1;
+}
+
+.button:hover { 
+    transform: scale(1.05); 
+    color: #000; 
+    background: #00f2fe; 
+    box-shadow: 0 0 20px #00f2 0 0 40px #00f2fe inset;
+}
